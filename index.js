@@ -14,6 +14,7 @@ app.get('/throw', (req, res) => {
 
 app.get('/divide', (req, res) => {
     console.log(`Node will be stopped right here`)
+    n = 2/0
     throw new Error('MY new thrown error ********************************')
     process.kill(process.pid, 'SIGTERM')
     res.send(`Node will be killed. After Killing`)
@@ -21,9 +22,9 @@ app.get('/divide', (req, res) => {
 
 
 app.get('/handledivide', (req, res) => {
-    n = 0
     try
-    n = 2/0
+      console.log("Division by 0 with try catch");
+      n = 2/0
     catch(e) {
         //exception handled here   
         console.log(e.message);  
