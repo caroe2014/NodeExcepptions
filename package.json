@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/caroe2014/NodeExcepptions/issues"
   },
-  "homepage": "https://github.com/caroe2014/NodeExcepptions#readme"
+  "homepage": "https://github.com/caroe2014/NodeExcepptions#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
